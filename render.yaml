@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: adaptivexsc
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "bash render_start.sh"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.7
+    disk:
+      name: audit-data
+      mountPath: /var/data
+      sizeGB: 1

@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.gemini/
+data/test_decision_audit_log.csv
+data/*.parquet
+data/decision_audit_log.csv
