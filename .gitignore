@@ -1,8 +1,29 @@
-.venv/
+# Python
 __pycache__/
 *.pyc
-.ipynb_checkpoints/
-.gemini/
-data/test_decision_audit_log.csv
-data/*.parquet
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+
+# Local databases and audit data
+*.db
+*.sqlite
+*.sqlite3
 data/decision_audit_log.csv
+
+# Environment/secrets
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
